@@ -1,0 +1,18 @@
+# Serial console output!
+enable_uart=1
+
+# 64bit-mode
+arm_control=0x200
+
+# Use U-Boot
+kernel=u-boot.bin 
+
+#device_tree_address=0x2A00000+${devicetree_size}
+device_tree=bcm2710-rpi-3-b.dtb
+
+#device_tree_end=0x8000
+
+
+#for i2c & spi
+dtparam=i2c_arm=on
+dtparam=spi=on
